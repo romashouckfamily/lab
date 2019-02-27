@@ -22,7 +22,7 @@ Please boot your laptop using the Ubuntu installation we did on Wednesday.
 - Sync your fork with my repo: https://help.github.com/en/articles/fork-a-repo#step-3-configure-git-to-sync-your-fork-with-the-original-spoon-knife-repository
 - Take a look at the syllabus in sublime
 
-BREAK + Movement exercises
+## BREAK + Movement exercises
 
 ## 5. [1 hour] Collaboration on Code of Conduct
 - We will review the Code of Conduct together to make sure we all understand the values and goals of this course. You can make suggestions for guidelines by submitting pull requests to my repository. Each person will submit one pull request that I will merge.
@@ -47,6 +47,6 @@ function randomizeSeating(names) {
 }
 ```
 
-[optional] 7. Configure your bash profile to make use of shortcuts
+## [optional] 7. Configure your bash profile to make use of shortcuts
 - Create alias in ~/.bash_profile: `alias lab='cd ~/Desktop/projects/lab’`
 - To see current path, use `pwd`  
