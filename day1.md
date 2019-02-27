@@ -4,8 +4,8 @@ Please boot your laptop using the Ubuntu installation we did on Wednesday.
 
 ## 1. Install Sublime for linux https://www.sublimetext.com/docs/3/linux_repositories.html
 - Install Package control: https://packagecontrol.io/installation
-Install console in Sublime: https://calebgrove.com/articles/js-console-sublime-text
-The console requires a Node.js install: https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions
+- Install console in Sublime: https://calebgrove.com/articles/js-console-sublime-text
+- The console requires a Node.js install: https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions
 
 ## 2. Get setup with Github
 - Setup git: https://help.github.com/en/articles/set-up-git
@@ -13,7 +13,7 @@ The console requires a Node.js install: https://github.com/nodesource/distributi
 - Don't forget to set up authentication to GitHub from Git: https://help.github.com/en/articles/set-up-git#next-steps-authenticating-with-github-from-git
 
 ## 3. Get access to weekly syllabus and homework
-- Go home: cd ~
+- Go home: `cd ~`
 - Make a new directory called projects in ~ 
 `mkdir projects`
 `cd projects`
@@ -30,7 +30,7 @@ The console requires a Node.js install: https://github.com/nodesource/distributi
 *Make sure to put a good commit message!*
 3. Fetch any changes from my repo: https://help.github.com/en/articles/syncing-a-fork
 4. Then, push your changes to your remote origin: `git push origin master`
-4. Finally, submit a Pull Request to my repository. Congratulations, you've submitted your first PR!
+5. Finally, submit a Pull Request to my repository. Congratulations, you've submitted your first PR!
 
 ## 5. Discussion on Data Types: 6 primitives + objects/symbols
 - Let's write some live code: Randomize seating in the room so that students from each school are sitting together.
