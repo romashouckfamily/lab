@@ -36,10 +36,12 @@ Please boot your laptop using the Ubuntu installation we did on Wednesday.
 	* See https://help.github.com/en/articles/configuring-a-remote-for-a-fork
 - Take a look at the syllabus in sublime
 
-## 6. [2 hours] Discussion on Data Types: 6 primitives + objects/symbols
+## [5 minutes] BREAK
+
+## 5. [2 hours] Discussion on Data Types: 6 primitives + objects/symbols
 - [30 minutes] Lecture/discussion
 - [30 minutes] Problem-solving methodology and live coding: Randomize seating in the room so that students from each school are sitting together. Learn data types, variable declaration, function declaration, loops
-- [30 minutes] And now, your turn to write a function
+- [30 minutes] And now, your turn to write a function in pairs. Use `randomizeSeating` in `challenges` folder to get started!
 - [15 minutes] debrief
 ```
 function randomizeSeating(names) {
