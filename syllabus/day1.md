@@ -6,10 +6,13 @@ Please boot your laptop using the Ubuntu installation we did on Wednesday.
 - Install Package control: Tools > Install Package Control and View Console: View > Show Console
 - Go to Tools > Command Palette. Click on Install Package
 - Install "Javascript Console" https://calebgrove.com/articles/js-console-sublime-text
-- The console requires a Node.js install: https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions
-When you download the Node.js files, remember to click extract to place them on your computer.
+- The console requires a Node.js install: https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04
+- Look for where node.js has been installed on your machine: `which node` 
+- Use that location in your `Node.sublime-build` file
 
 ## 3. [30 minutes] Get setup with Github
+- Creat github account 
+
 - Setup git: https://help.github.com/en/articles/set-up-git
 `sudo apt install git` You'll have to enter your password and hit `y` once or twice.
 
@@ -53,3 +56,4 @@ function randomizeSeating(names) {
 ## [optional] 7. Configure your bash profile to make use of shortcuts
 - Create alias in ~/.bash_profile: `alias lab='cd ~/Desktop/projects/lab’`
 - To see current path, use `pwd`  
+- Add shortcut for sublime, so that you can open sublime from the command line
