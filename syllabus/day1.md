@@ -2,7 +2,7 @@
 
 Please boot your laptop using the Ubuntu installation we did on Wednesday.
 
-## 1. [1 hour] Install Sublime for linux using the app finder in the bottom left hand corner
+## 1. [30 minutes] Install Sublime for linux using the app finder in the bottom left hand corner
 - Install Package control: Tools > Install Package Control
 - Go to Tools > Command Palette. Click on Install Package
 - Install "Javascript Console" https://calebgrove.com/articles/js-console-sublime-text
@@ -23,9 +23,7 @@ Please boot your laptop using the Ubuntu installation we did on Wednesday.
 - Creat github account 
 
 - Setup git: https://help.github.com/en/articles/set-up-git
-`sudo apt install git` You'll have to enter your password and hit `y` once or twice.
-
-- Don't forget to set up authentication to GitHub from Git: https://help.github.com/en/articles/set-up-git#next-steps-authenticating-with-github-from-git
+`sudo apt install git` You'll have to enter your linux password and hit `y` once or twice.
 
 ## 4. [30 minutes] Get access to weekly syllabus and homework
 - Go home: `cd ~`
@@ -34,7 +32,7 @@ Please boot your laptop using the Ubuntu installation we did on Wednesday.
 `cd projects`
 - Fork my github repository: https://github.com/onelovelyname/lab
 - Clone your fork of my repo: `git clone https://github.com/YOUR_NAME/lab`
-- Sync your fork with my repo: https://help.github.com/en/articles/fork-a-repo#step-3-configure-git-to-sync-your-fork-with-the-original-spoon-knife-repository
+- Sync your fork with my repo (if time): https://help.github.com/en/articles/fork-a-repo#step-3-configure-git-to-sync-your-fork-with-the-original-spoon-knife-repository
 - Take a look at the syllabus in sublime
 
 ## BREAK + Movement exercises
@@ -49,7 +47,7 @@ Please boot your laptop using the Ubuntu installation we did on Wednesday.
 4. Then, push your changes to your remote origin: `git push origin master`
 5. Finally, submit a Pull Request to my repository. Congratulations, you've submitted your first PR!
 
-## 6. [1 hour 30 minutes] Discussion on Data Types: 6 primitives + objects/symbols
+## 6. [2 hours] Discussion on Data Types: 6 primitives + objects/symbols
 - [15 minutes] Problem-solving methodology
 - [30 minutes] Let's write some live code: Randomize seating in the room so that students from each school are sitting together. Learn data types, variable declaration, function declaration, loops
 - [30 minutes] And now, your turn to write a function
@@ -63,6 +61,7 @@ function randomizeSeating(names) {
 ```
 
 ## [optional] 7. Configure your bash profile to make use of shortcuts
+- Set up authentication to GitHub from Git: https://help.github.com/en/articles/set-up-git#next-steps-authenticating-with-github-from-git
 - Create alias in ~/.bash_profile: `alias lab='cd ~/Desktop/projects/lab’`
 - To see current path, use `pwd`  
 - Add shortcut for sublime, so that you can open sublime from the command line
