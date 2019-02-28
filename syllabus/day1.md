@@ -19,7 +19,7 @@ Please boot your laptop using the Ubuntu installation we did on Wednesday.
 }
 ```
 
-## 3. [30 minutes] Get setup with Github
+## 3. [15 minutes] Get setup with Github
 - Creat github account 
 
 - Setup git: https://help.github.com/en/articles/set-up-git
@@ -30,26 +30,15 @@ Please boot your laptop using the Ubuntu installation we did on Wednesday.
 - Make a new directory called projects in ~ 
 `mkdir projects`
 `cd projects`
-- Fork my github repository: https://github.com/onelovelyname/lab
+- Fork my github repository: https://github.com/onelovelyname/lab (https://help.github.com/en/articles/fork-a-repo)
 - Clone your fork of my repo: `git clone https://github.com/YOUR_NAME/lab`
-- Sync your fork with my repo (if time): https://help.github.com/en/articles/fork-a-repo#step-3-configure-git-to-sync-your-fork-with-the-original-spoon-knife-repository
+- Add remote upstream (my repo) for your fork: `git remote add upstream https://github.com/onelovelyname/lab`
+	* See https://help.github.com/en/articles/configuring-a-remote-for-a-fork
 - Take a look at the syllabus in sublime
 
-## BREAK + Movement exercises
-
-## 5. [1 hour] Collaboration on Code of Conduct
-- We will review the Code of Conduct together to make sure we all understand the values and goals of this course. You can make suggestions for guidelines by submitting pull requests to my repository. Each person will submit one pull request that I will merge.
-### Steps:
-1. Make sure that the Code of Conduct file is open in your Sublime text editor
-2. Make a change to the file. You can suggest new guidelines. When we are all satisfied, add your name to the document in your text editor. Then, commit your changes: `git add` `git commit`
-*Make sure to put a good commit message!*
-3. Fetch any changes from my repo: https://help.github.com/en/articles/syncing-a-fork
-4. Then, push your changes to your remote origin: `git push origin master`
-5. Finally, submit a Pull Request to my repository. Congratulations, you've submitted your first PR!
-
 ## 6. [2 hours] Discussion on Data Types: 6 primitives + objects/symbols
-- [15 minutes] Problem-solving methodology
-- [30 minutes] Let's write some live code: Randomize seating in the room so that students from each school are sitting together. Learn data types, variable declaration, function declaration, loops
+- [30 minutes] Lecture/discussion
+- [30 minutes] Problem-solving methodology and live coding: Randomize seating in the room so that students from each school are sitting together. Learn data types, variable declaration, function declaration, loops
 - [30 minutes] And now, your turn to write a function
 - [15 minutes] debrief
 ```
@@ -59,6 +48,22 @@ function randomizeSeating(names) {
 
 }
 ```
+
+## BREAK + Movement exercises
+
+## 5. [1 hour] Collaboration on Code of Conduct
+- We will review the Code of Conduct together to make sure we all understand the values and goals of this course. You can make suggestions for guidelines by submitting pull requests to my repository. Each person will submit one pull request that I will merge.
+### Steps:
+0. Sync your fork with my repo: https://help.github.com/en/articles/syncing-a-fork 
+	* `git fetch upstream` 
+	* `git checkout master` 
+	* `git merge upstream/master`
+1. Make sure that the Code of Conduct file is open in your Sublime text editor
+2. Make a change to the file. You can suggest new guidelines. When we are all satisfied, add your name to the document in your text editor. Then, commit your changes: `git add` `git commit`
+*Make sure to put a good commit message!*
+3. Fetch any changes from my repo: https://help.github.com/en/articles/syncing-a-fork
+4. Then, push your changes to your remote origin: `git push origin master`
+5. Finally, submit a Pull Request to my repository. Congratulations, you've submitted your first PR!
 
 ## [optional] 7. Configure your bash profile to make use of shortcuts
 - Set up authentication to GitHub from Git: https://help.github.com/en/articles/set-up-git#next-steps-authenticating-with-github-from-git
