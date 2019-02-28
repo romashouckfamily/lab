@@ -69,6 +69,9 @@ function randomizeSeating(names) {
 
 ## [optional] 7. Configure your bash profile to make use of shortcuts
 - Set up authentication to GitHub from Git: https://help.github.com/en/articles/set-up-git#next-steps-authenticating-with-github-from-git
+	* `git config --global credential.helper cache`
+	* `git config --global credential.helper 'cache --timeout=3600' `
+	* // 3600 is one hour, you can choose how long you want to cache your password
 - Create alias in ~/.bash_profile: `alias lab='cd ~/Desktop/projects/lab’`
 - To see current path, use `pwd`  
 - Add shortcut for sublime, so that you can open sublime from the command line
