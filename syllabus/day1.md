@@ -3,12 +3,15 @@
 Please boot your laptop using the Ubuntu installation we did on Wednesday.
 
 ## 1. [1 hour] Install Sublime for linux https://www.sublimetext.com/docs/3/linux_repositories.html
-- Install Package control: https://packagecontrol.io/installation
-- Install console in Sublime: https://calebgrove.com/articles/js-console-sublime-text
+- Install Package control: Tools > Install Package Control and View Console: View > Show Console
+- Go to Tools > Command Palette. Click on Install Package
+- Install "Javascript Console" https://calebgrove.com/articles/js-console-sublime-text
 - The console requires a Node.js install: https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions
+When you download the Node.js files, remember to click extract to place them on your computer.
 
 ## 3. [30 minutes] Get setup with Github
 - Setup git: https://help.github.com/en/articles/set-up-git
+`sudo apt install git` You'll have to enter your password and hit `y` once or twice.
 
 - Don't forget to set up authentication to GitHub from Git: https://help.github.com/en/articles/set-up-git#next-steps-authenticating-with-github-from-git
 
