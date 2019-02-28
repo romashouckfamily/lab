@@ -2,13 +2,22 @@
 
 Please boot your laptop using the Ubuntu installation we did on Wednesday.
 
-## 1. [1 hour] Install Sublime for linux https://www.sublimetext.com/docs/3/linux_repositories.html
-- Install Package control: Tools > Install Package Control and View Console: View > Show Console
+## 1. [1 hour] Install Sublime for linux using the app finder in the bottom left hand corner
+- Install Package control: Tools > Install Package Control
 - Go to Tools > Command Palette. Click on Install Package
 - Install "Javascript Console" https://calebgrove.com/articles/js-console-sublime-text
-- The console requires a Node.js install: https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04
+- The console requires a Node.js install 
+`sudo apt update`
+`sudo apt install nodejs`
+-- See https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04
 - Look for where node.js has been installed on your machine: `which node` 
-- Use that location in your `Node.sublime-build` file
+- Create a new build called `Node.sublime-build`. Use the location of node in your file, which should look something like this:
+```
+{
+  "cmd": ["/usr/bin/nodejs", "$file"],
+  "selector": "source.js"
+}
+```
 
 ## 3. [30 minutes] Get setup with Github
 - Creat github account 
@@ -57,3 +66,6 @@ function randomizeSeating(names) {
 - Create alias in ~/.bash_profile: `alias lab='cd ~/Desktop/projects/lab’`
 - To see current path, use `pwd`  
 - Add shortcut for sublime, so that you can open sublime from the command line
+
+## Homework:
+- freecodecamp: Basic Javascript course, up until "Understanding Boolean values"
