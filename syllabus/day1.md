@@ -79,4 +79,5 @@ function randomizeSeating(names) {
 - Add shortcut for sublime, so that you can open sublime from the command line
 
 ## Homework:
+- functions worksheet in `lab/homework/day1.js`. Complete 5 of the functions (or more for good practice!). You will be presenting the function you are assigned with your partner next Saturday.
 - freecodecamp: Basic Javascript course, up until "Understanding Boolean values"
