@@ -31,7 +31,6 @@ Please boot your laptop using the Ubuntu installation we did on Wednesday.
 ## 4. [1 hour] Live coding: Randomize seating in the room so that students from each school are sitting together. Learn data types, variable declaration, function declaration, loops
 - [30 minutes] And now, your turn to write a function in pairs. Use `randomizeSeating` in `challenges` folder to get started!
 - [15 minutes] debrief
-```
 
 ## 6. [spare time] Sign up for Slack and freecodecamp, configure `~/.bash_profile`, other extras that make coding more efficient
 - Sign for freecodecamp, which you'll need for homework
