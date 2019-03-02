@@ -67,7 +67,9 @@ function randomizeSeating(names) {
 4. Then, push your changes to your remote origin: `git push origin master`
 5. Finally, submit a Pull Request to my repository. Congratulations, you've submitted your first PR!
 
-## [optional] 7. Configure your bash profile to make use of shortcuts
+## 6. [spare time] Sign up for Slack and freecodecamp, configure `~/.bash_profile`, other extras that make coding more efficient
+- Accept Slack invite from Melanie / create account
+- Sign for freecodecamp, which you'll need for homework
 - Set up authentication to GitHub from Git: https://help.github.com/en/articles/set-up-git#next-steps-authenticating-with-github-from-git
 	* `git config --global credential.helper cache`
 	* `git config --global credential.helper 'cache --timeout=3600' `
