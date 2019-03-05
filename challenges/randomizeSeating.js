@@ -1,9 +1,11 @@
 // Learning objectives: data types, variables, functions
-
+// Remember: What is an array? 
+// How do you write a for loop?
+// 
 var classList = [
 	"Natalie", "Maria A.", "Ellen", "Maria M.", "Hala", 
 	"Salar", "Lubov", "Shrouq", "Diana", "Dania", "Nadeen", 
-	"Amjad", "Christo", "Fawzi", "Judeh", "Moh", "Miray", "Ibrahim", "Anton"
+	"Amjad", "Christo", "Fawzi", "Judeh", "Moh", "Miray", "Ibrahim", "Anton", "Ramiz"
 	];
 
 // input: array of student names: ["Ibrahim"]
@@ -17,6 +19,7 @@ function convertIntoObject(classList) {
 
 	var newList = {};
 
+	// first type of for loop, this is for looping through ARRAYS
 	for (var i = 0; i < classList.length; i++) {
 		// classList[i] is Natalie, for example
 		var name = classList[i];
@@ -53,7 +56,9 @@ function randomizeSeating(classObj) {
 		table4: [] //4
 	};
 
+	// second type of for loops, this is for looping through OBJECTS
 	for (var student in classObj) {
+		// choose a random number between 1 and 4
 		var random = Math.ceil(Math.random() * 4);
 
 		// console.log(classObj[student]);
@@ -76,7 +81,29 @@ function randomizeSeating(classObj) {
 		}
 	}
 
-	console.log(seatingChart);
+	//console.log(seatingChart);
 }
 
-randomizeSeating(classObj);
+//randomizeSeating(classObj);
+
+
+function randomizeSeating2(classList) {
+	var numSeats = 20;
+	var seatingChart = [];
+
+	for (i = 0; i < numSeats; i++) {
+		// choose one student randomly from classList array
+		var randomPosition = Math.floor(Math.random() * classList.length);
+		var student = classList[randomPosition];
+
+		// add student to seatingChart
+		seatingChart.push(student);
+
+		// remove student so they are not selected again
+		classList.splice(randomPosition, 1);
+	}
+	return seatingChart;
+}
+
+console.log(randomizeSeating2(classList));
+
