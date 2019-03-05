@@ -105,5 +105,22 @@ function randomizeSeating2(classList) {
 	return seatingChart;
 }
 
-console.log(randomizeSeating2(classList));
+var seatingChart = randomizeSeating2(classList);
 
+function splitIntoTables(seatingChart) {
+	var tableSize = [6,6,4,4];
+	var tables = [];
+	for (var i = 0; i < tableSize.length; i++) {
+		var table = seatingChart.splice(0, tableSize[i]);
+		tables.push(table);
+	}
+	return tables;
+}
+
+console.log(splitIntoTables(seatingChart));
+/* Table groups starting on Saturday, March 9
+[ [ 'Hala', 'Dania', 'Fawzi', 'Lubov', 'Anton', 'Christo' ],
+  [ 'Natalie', 'Moh', 'Ramiz', 'Maria A.', 'Amjad', 'Judeh' ],
+  [ 'Ibrahim', 'Miray', 'Diana', 'Salar' ],
+  [ 'Nadeen', 'Maria M.', 'Shrouq', 'Ellen' ] ]
+*/
