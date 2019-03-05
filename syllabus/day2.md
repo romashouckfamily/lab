@@ -2,7 +2,13 @@
 - Work on your own to write a function that randomizes this list: ['falafel', 'shwarma', 'maqlouba', 'hubezi', 'lentils'];
 
 ## 1. [45 minutes] Problem-solving methodology lecture
-- 30 minutes discussing problem-solving as a discipline
+- 30 minutes discussing problem-solving as a discipline: Go slowly, be patient, and identify what the issue is.
+- Last class we worked through concepts very quickly. We're now going to review them.
+* When you're frustrated, take a breath or a break. Come to the problem with a clear mind, frustrated minds don't solve problems. *
+
+- Read your error messages carefully.
+- Use proper indentation so you can spot errors more quickly. 
+- Check your parentheses and curly braces. You need to match opening and closing parentheses and curly braces in Javascript.
 - 10 minutes with Mahd
 
 ## 2. [15 minutes] Get setup with Git
