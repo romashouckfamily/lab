@@ -1,6 +1,3 @@
-## 0. [15 minutes] Coding Challenge of the Day
-- Debugging worksheet
-
 ## 1. [45 minutes] Problem-solving methodology lecture
 - 30 minutes discussing problem-solving as a discipline: Go slowly, be patient, and identify what the issue is.
 - Last class we worked through concepts very quickly. We're going to review them today.
@@ -31,9 +28,12 @@
 	* See https://help.github.com/en/articles/configuring-a-remote-for-a-fork
 - Take a look at the syllabus in sublime
 
+## 4. [15 minutes] Coding Challenge of the Day
+- Debugging worksheet
+
 ## BREAK (10 minutes)
 
-## 4. [1 hour] Collaboration on Code of Conduct
+## 5. [1 hour] Collaboration on Code of Conduct
 - We will review the Code of Conduct together to make sure we all understand the values and goals of this course. You can make suggestions for guidelines by submitting pull requests to my repository. Each person will submit one pull request that I will merge.
 ### Steps:
 0. Sync your fork with my repo: https://help.github.com/en/articles/syncing-a-fork 
@@ -49,6 +49,6 @@
 
 ## BREAK FOR MOVEMENT (5 minutes)
 
-## 5. [1 hour] Review functions
+## 6. [1 hour] Review functions
 - randomizeSeating function 
 - Functions worksheet from homework: each group will present their function
