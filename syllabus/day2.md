@@ -1,14 +1,19 @@
 ## 0. [15 minutes] Coding Challenge of the Day
-- Work on your own to write a function that randomizes this list: ['falafel', 'shwarma', 'maqlouba', 'hubezi', 'lentils'];
+- Debugging worksheet
 
 ## 1. [45 minutes] Problem-solving methodology lecture
 - 30 minutes discussing problem-solving as a discipline: Go slowly, be patient, and identify what the issue is.
-- Last class we worked through concepts very quickly. We're now going to review them.
-* When you're frustrated, take a breath or a break. Come to the problem with a clear mind, frustrated minds don't solve problems. *
-
+- Last class we worked through concepts very quickly. We're going to review them today.
+### Tips
+- When you're frustrated, take a breath or a break. Come to the problem with a clear mind, frustrated minds don't solve problems. 
 - Read your error messages carefully.
 - Use proper indentation so you can spot errors more quickly. 
 - Check your parentheses and curly braces. You need to match opening and closing parentheses and curly braces in Javascript.
+- When you Google, be sure to include "Javascript" in your search query. And be as specific as you can: "choose element in array randomly Javascript" is a better search than "randomize array". When you look at search results, look for those that are:
+	* written in Javascript
+	* address your specific question
+	* if it relates to your environment, make sure to add "Ubuntu" to your query.
+
 - 10 minutes with Mahd
 
 ## 2. [15 minutes] Get setup with Git
