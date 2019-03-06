@@ -61,10 +61,12 @@ This practice is difficult. When I'm in the middle of debugging something, it's 
 	* Keep searching until you have a better understanding of your issue.
 	* As you go along in your search, you can continue to re-define your hypothesis to be closer and closer to your issue.
 
-5. Ask a friend. It's often easier to find a bug if you and a friend are working together to solve the issue. 
+5. Use the tools at your disposal. Firefox and Google Chrome both have good web inspectors. If it is a web issue, check if there are errors in the console. 
+
+6. Ask a friend. It's often easier to find a bug if you and a friend are working together to solve the issue. 
 	* Tell them the error you are seeing, your current hypothesis, and what you have already tried. 
 
-6. Ask a teacher for help.
+7. Ask a teacher for help.
 	* If you ask me for help, I will ask about your steps: (1) What is the error you are seeing? (2) What have you tried already to solve the problem? (3) What is your hypothesis about the solution?
 	* If you have not already defined the above questions, I will ask you to go back and complete those steps first.
 
