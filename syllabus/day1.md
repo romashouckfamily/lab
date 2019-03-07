@@ -12,6 +12,7 @@ Please boot your laptop using the Ubuntu installation we did on Wednesday.
 - Create Github account
 
 ## 3. [2 hours] Install Sublime for linux using the app finder in the bottom left hand corner
+- If sublime install does not work, run the following command in your terminal window: `sudo apt-get install libgtk2.0-0`
 - Install Package control: Tools > Install Package Control
 - Go to Tools > Command Palette. Click on Install Package
 - Install "Javascript Console" https://calebgrove.com/articles/js-console-sublime-text
