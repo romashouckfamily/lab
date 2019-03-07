@@ -57,7 +57,8 @@ var name2 = 'Zain';
 // console.log(name1);
 // console.log(name2);
 // console.log(`Hello, ${name1}!`);
-
+// var hello = "Hello " + name1;
+// console.log(hello);
 // 4. undefined
 // The meaning of undefined is “value is not assigned”.
 // If a variable is declared, but not assigned, then its value is undefined
@@ -107,6 +108,18 @@ var classList = [
 	"Amjad", "Christo", "Fawzi", "Judeh", "Moh", "Miray", "Ibrahim", "Anton"
 	];
 
+classList[1];
+classList[classList.length - 1];
+
+var tree = {
+	length: 20,
+	height: 50,
+	name: "Olive"
+};
+
+console.log(tree.length)
+console.log(tree["name"])
+
 // var classList2 = {
 // 	"19": 'anton'
 // }
@@ -119,8 +132,8 @@ var anton2 = classList[19];
 
 var moh1 = classList[15];
 
-console.log(moh1);
-console.log(classNum);
+// console.log(moh1);
+// console.log(classNum);
 
 // Function declaration
 
@@ -145,6 +158,22 @@ function subDec (num1, num2) {
 var subEx = function (num1, num2) {
 	return num1 - num2;
 }
+
+
+//console.log(identity1("Ramiz1"));
+console.log(identity2("Ramiz2"));
+// function declaration
+function identity1 (name1) {
+	//body 
+	return name1;
+}
+
+// function assignment/expression
+
+var identity2 = function (name2) {
+	// body
+	return name2;
+} 
 
 //console.log(subDec(5,10));
 

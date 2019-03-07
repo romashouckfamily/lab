@@ -124,3 +124,25 @@ console.log(splitIntoTables(seatingChart));
   [ 'Ibrahim', 'Miray', 'Diana', 'Salar' ],
   [ 'Nadeen', 'Maria M.', 'Shrouq', 'Ellen' ] ]
 */
+
+
+// input: list of numbers [1,2,3,4,5]
+// output: list of odd numbers
+function filterToOdd (list) {
+	var oddList = [];
+
+	for (var i = 0; i <= list.length -1; i++) {
+		console.log(list[i]);
+		if (list[i] % 2 !== 0) {
+			oddList.push(list[i]);
+		}
+	}
+	//console.log(oddList);
+	return oddList;
+}
+var odds = filterToOdd([1,2,3,4,5]);
+console.log("odds: " + odds);
+
+
+
+

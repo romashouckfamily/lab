@@ -14,7 +14,7 @@
 // Moh and Judeh | contains
 // Dania and Nadeen | pluck
 // Miray and Anton | indexOf
-// Lubov | last
+// Lubov and Ramiz | last
 
 //////////////////////////////////
 // input: 4 
