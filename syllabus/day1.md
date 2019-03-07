@@ -12,13 +12,15 @@ Please boot your laptop using the Ubuntu installation we did on Wednesday.
 - Create Github account
 
 ## 3. [2 hours] Install Sublime for linux using the app finder in the bottom left hand corner
-- If sublime install does not work, run the following command in your terminal window: `sudo apt-get install libgtk2.0-0`
-- Install Package control: Tools > Install Package Control
+- If sublime install does not work, run the following command in your terminal window: 
+	* `sudo apt update`
+	* `sudo apt-get install libgtk2.0-0`
+- Install Package control in Sublime: Tools > Install Package Control
 - Go to Tools > Command Palette. Click on Install Package
 - Install "Javascript Console" https://calebgrove.com/articles/js-console-sublime-text
 - The console requires a Node.js install 
-`sudo apt update`
-`sudo apt install nodejs`
+	* `sudo apt update`
+	* `sudo apt install nodejs`
 -- See https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04
 - Look for where node.js has been installed on your machine: `which node` 
 - Create a new build called `Node.sublime-build`. Use the location of node in your file, which should look something like this:
@@ -28,6 +30,8 @@ Please boot your laptop using the Ubuntu installation we did on Wednesday.
   "selector": "source.js"
 }
 ```
+- Select your build system: Node
+- Press control + B to confirm that your build system is working properly! You should see a console window pop up in the bottom of Sublime.
 
 ## 4. [1 hour] Live coding: Randomize seating in the room so that students from each school are sitting together. Learn data types, variable declaration, function declaration, loops
 - [30 minutes] And now, your turn to write a function in pairs. Use `randomizeSeating` in `challenges` folder to get started!
