@@ -79,3 +79,6 @@ If you have 60 minutes allocated to one question, spend your time like this:
 - 20 minutes trying to solve it on your own
 - 20 minutes trying to solve it with a peer
 - 20 minutes asking a teacher for help
+
+## Checking in
+- What do you use Terminal, Sublime, and the web browser for?
