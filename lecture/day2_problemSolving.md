@@ -8,7 +8,8 @@ We need to learn steps and tools to help us when we are stuck.
 - You're probably not the only one. If you've run into a problem, chances are somebody else has too! We can learn how to look for answers: online, from our friends, and from our teachers.
 
 ## Before you start writing code
-0. Understand the inputs and outputs of a function that you're writing. Write down some examples of inputs and expected outputs in the comments so that you can test your functions after you've written them. Ask yourself: 
+0. Make sure you're writing Javascript!
+1. Understand the inputs and outputs of a function that you're writing. Write down some examples of inputs and expected outputs in the comments so that you can test your functions after you've written them. Ask yourself: 
 	* Have I written down the `inputs` and `outputs` that I expect? 
 	* What is the data type of each of the `inputs` and `outputs`?
 	* What are some examples that I could use for testing after I write my function?
@@ -45,6 +46,8 @@ This practice is difficult. When I'm in the middle of debugging something, it's 
 	* "I hypothesize that this is not working because there is something wrong with my syntax `{`. I'll go check there first."
 
 3. Check for simple solutions. Javascript is particular about how code is written. Here are some simple things to confirm:
+	* Are you writing Javascript or another language you know?
+	* Are you using the correct program? Sublime is your text editor, Terminal is your command line, and Firefox is your web browser.
 	* Have you correctly opened and closed all parentheses, curly braces, and brackets? `(), {}, []` must have their corresponding pair. Use proper indentations to make this easy to see. 
 	* Have you used quotation marks correctly? Double quotations must pair with other double quotations, and the same is true of single quotations and backticks.
 	* Have you named everything correctly, or do you have typos? If you name a variable `myFriend`, you must later refer to it as `myFriend`. NOT `myfriend` or `my Friend`. 
