@@ -23,4 +23,16 @@ function getElementsBeginningWithQ(list) {
 }
 
 var q = getElementsBeginningWithQ(myList);
-console.log("q: " + q);
+//console.log("q: " + q);
+
+function example() {
+  y = 1;   // Throws a ReferenceError in strict mode
+  var z = 2;
+}
+
+example();
+
+console.log(y); // logs "1" 
+console.log(y + 2);
+
+console.log(z); // Throws a ReferenceError: z is not defined outside x
