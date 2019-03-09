@@ -1,3 +1,17 @@
+## 0. [5 minutes] Review course structure
+1. Learn code basics and collaborative workflows
+- Environment setup, including: text editor, command line tool, Github
+- Problem-solving methodology
+- Introduction to algorithms
+- Basic Javascript, ES6
+- Data types
+- Data structures: Arrays, stacks, queues, hashes, linked lists
+- Functions
+2. Develop understanding of the client-server relationships; build client
+3. Build backend server; discuss scalability and security
+4. Putting it all together by building a solo project
+5. Build web application with teammates, demo project
+
 ## 1. [45 minutes] Problem-solving methodology lecture
 - 30 minutes discussing problem-solving as a discipline: Go slowly, be patient, and identify what the issue is.
 - Last class we worked through concepts very quickly. We're going to review them today.
@@ -16,6 +30,8 @@
 ## 2. [20 minutes] Coding Challenge of the Day
 - Debugging worksheet
 
+BREAK (if needed)
+
 ## 3. [15 minutes] Get setup with Git
 - Setup git: https://help.github.com/en/articles/set-up-git
 `sudo apt install git` You'll have to enter your linux password and hit `y` once or twice.
@@ -23,13 +39,18 @@
 ## 4. [30 minutes] Get access to weekly syllabus and homework
 - Go home: `cd ~`
 - Make a new directory called projects in ~ 
-`mkdir projects`
-`cd projects`
+	* `mkdir projects`
+	* `cd projects`
 - Fork my github repository: https://github.com/onelovelyname/lab (https://help.github.com/en/articles/fork-a-repo)
 - Clone your fork of my repo: `git clone https://github.com/YOUR_NAME/lab`
 - Add remote upstream (my repo) for your fork: `git remote add upstream https://github.com/onelovelyname/lab`
 	* See https://help.github.com/en/articles/configuring-a-remote-for-a-fork
 - Take a look at the syllabus in sublime
+- Add your homework (functions worksheet) to the `homework` folder. Save it as `day1_homework_[FIRST_NAME_LAST_INITIAL].js`
+	* `git status`
+	* `git add .`
+	* `git commit` and enter commit message "Add functions homework"
+	* `git push origin master` to get your homework online for review 
 
 ## BREAK (10 minutes)
 
