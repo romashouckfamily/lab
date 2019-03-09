@@ -13,11 +13,14 @@
 
 - 10 minutes with Mahd
 
-## 2. [15 minutes] Get setup with Git
+## 2. [20 minutes] Coding Challenge of the Day
+- Debugging worksheet
+
+## 3. [15 minutes] Get setup with Git
 - Setup git: https://help.github.com/en/articles/set-up-git
 `sudo apt install git` You'll have to enter your linux password and hit `y` once or twice.
 
-## 3. [30 minutes] Get access to weekly syllabus and homework
+## 4. [30 minutes] Get access to weekly syllabus and homework
 - Go home: `cd ~`
 - Make a new directory called projects in ~ 
 `mkdir projects`
@@ -27,9 +30,6 @@
 - Add remote upstream (my repo) for your fork: `git remote add upstream https://github.com/onelovelyname/lab`
 	* See https://help.github.com/en/articles/configuring-a-remote-for-a-fork
 - Take a look at the syllabus in sublime
-
-## 4. [15 minutes] Coding Challenge of the Day
-- Debugging worksheet
 
 ## BREAK (10 minutes)
 
