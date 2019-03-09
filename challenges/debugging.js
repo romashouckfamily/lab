@@ -30,3 +30,10 @@ function sayHello (name1, name2) {
 }
 
 console.log(sayHello("Mahd" , "Amjad"));
+
+
+// two issues
+function sayGoodbye(name1){
+	console.log('Goodbye!');
+}
+SayGoodbye();
