@@ -1,6 +1,7 @@
 # What do we do when we run into a problem we don't know how to solve? 
 For better or worse, this happens to software engineers every day. 
-We need to learn steps and tools to help us when we are stuck. 
+We need to learn steps and tools to help us when we are stuck.
+We develop intuition for problem-solving through PRACTICE!
 
 ## Things to keep in mind:
 - Go slowly and read everything. Coding requires careful, line-by-line reading. Computers are very particular!
@@ -8,13 +9,13 @@ We need to learn steps and tools to help us when we are stuck.
 - You're probably not the only one. If you've run into a problem, chances are somebody else has too! We can learn how to look for answers: online, from our friends, and from our teachers.
 
 ## Before you start writing code
-0. Make sure you're writing Javascript!
+0. Make sure you're writing Javascript and have the basic syntax written correctly!
 1. Understand the inputs and outputs of a function that you're writing. Write down some examples of inputs and expected outputs in the comments so that you can test your functions after you've written them. Ask yourself: 
 	* Have I written down the `inputs` and `outputs` that I expect? 
 	* What is the data type of each of the `inputs` and `outputs`?
 	* What are some examples that I could use for testing after I write my function?
 
-1. Talk yourself through how the function should work, writing pseudo-code along the way. 
+2. Talk yourself through how the function should work, writing pseudo-code along the way. 
 	* See example for selecting items of color red. 
 	```
 	function selectItemsOfColorRed() {
@@ -27,9 +28,9 @@ We need to learn steps and tools to help us when we are stuck.
 	* Let's write pseudo-code for three functions together (including inputs, outputs, and examples please)
 		(1) Return all elements beginning with the letter "Q" from input array.
 		(2) Return all numbers greater than 10 from input array. 
-		(3) Return all keys in object for all numerical values. 
+		(3) Return all keys in object for all numerical values. {"hello": 1, "goodbye": 2, "wait": "okay"}
 
-2. Start to write the function, using your pseudo-code as an outline. Console log frequently to check that your code is acting as expected. Write clean code to prevent simple bugs!
+3. Start to write the function, using your pseudo-code as an outline. Console log frequently to check that your code is acting as expected. Write clean code to prevent simple bugs!
 	* Pair parentheses, curly braces, and brackets properly. 
 	* Use good indentation so that you can read your code easily. You want to indent if creating a function body, if writing an `if` statement body, etc. You will develop intuition around this as you practice.
 
@@ -57,9 +58,10 @@ This practice is difficult. When I'm in the middle of debugging something, it's 
 		// write function body here
 	}
 	```
-	* 
+	
 4. Look for help online. Google for the problem, as it is likely that someone else has run into the same problem. 
 	* When you Google, be specific. Use "Javascript" in the search query so that you find solutions in the same language.
+	* if it relates to your environment, make sure to add "Ubuntu" to your query.
 	* If you don't know what the problem is, try to get as close as possible. Chances are, other people were also as confused as you, and the search results should help you to define your search query better. 
 	* Keep searching until you have a better understanding of your issue.
 	* As you go along in your search, you can continue to re-define your hypothesis to be closer and closer to your issue.
