@@ -1,4 +1,11 @@
+/* Day 3 review worksheet
+	Please complete this worksheet to practice what we've learned so far. 
+	If you have questions or get stuck, please utilize the steps we've learned in the problem-solving lecture: 
+	Calm self by taking a break (if needed), identify the error, make a hypothesis, and try simple solutions first.
+*/
+
 // 0. Print "Hello, world" to the console.
+
 
 // 1. Write an if statement to check if a value is greater than or equal to 10.
 
@@ -27,10 +34,11 @@ var person = {
 var fruits = ["pomegranate", "peach", "pear", "pomelo", "rice"];
 
 
-// 6. Remove the value "rice" from the fruits array.
+// 6. Remove the value "rice" from the fruits array. Try the splice function. 
+// See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
 
 
-// 7. Add a key-value to the person object above with key = "hasComputer" and value = true
+// 7. Add a key-value to the person object above with key = "hasComputer" and value = true.
 
 
 // 8. Write a for loop that prints the numbers 1-10 to the console.
