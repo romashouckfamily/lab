@@ -16,16 +16,23 @@
 
 ## BREAK FOR MOVEMENT (5 minutes)
 
-## 3. [1 hour] Javascript lecture review
+## 3. [20 minutes] Javascript review in lecture form
+We will cover:
 - typeof with data types
 - Array manipulation: pop, push, shift, unshift. Dot and bracket notation
 - If statements, including && and || operators
 - Comparison with strict and loose equality
 - Loops: for and while
 - global vs. local scope
+- *We will add your open questions to the list of topics*
 
-## 4. [1 hour 30 minutes] Review functions
-- Functions worksheet from homework: each group will present their function
+## 4. [1 hour] Day 3 practice worksheet
+- We will start a list on the board for help requests after 10 minutes.
+- If you ask for help, we will ask about your steps: (1) What is the error you are seeing? (2) What have you tried already to solve the problem? (3) What is your hypothesis about the solution?
+
+
+## 4. [30 minutes] Review functions worksheet
+- Functions worksheet from homework: one person from each table will present their function to the class
 
 ## 5. [5 minutes] Preview of next week
 - We will be moving on from Javascript basics into building a front-end interface for a web game: Guitar Hero
