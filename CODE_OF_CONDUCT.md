@@ -10,6 +10,7 @@
 // Add your accepted ideas here 
 
 ## Signed,
+### amjad
 ### Ibrahim
 ### nadeen
 ### dania
@@ -18,3 +19,4 @@
 ### Lubov Romashouck
 ### Miray Shahin
 ### Melanie Gin
+
