@@ -11,3 +11,5 @@
 
 ## Signed,
 ### Melanie
+### Lubov Romashouck
+### Miray Shahin
