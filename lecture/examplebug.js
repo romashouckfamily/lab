@@ -1,6 +1,9 @@
 // Example Bug 
 
-myList = ["Anton", "Christo", "Amjad" "Miray"];
+// GLOBAL SCOPE, do not write like this:
+myList = ["Anton", "Christo", "Amjad", "Miray"];
+//console.log(myList);
+var myList2 = ["Ellen", "Lubov", "Shrouq", "Ibrahim"];
 
 
 // Step 1. Determine what works
@@ -28,8 +31,8 @@ myList = ["Anton", "Christo", "Amjad" "Miray"];
 
 
 
-for(let i=0; i<myList.length i++){
-	console.log(mylist[i]);
+for(let i=0; i<myList.length; i++){
+	console.log(myList[i]);
 }
 
 
