@@ -10,10 +10,6 @@
 // Add your accepted ideas here 
 
 ## Signed,
-<<<<<<< HEAD
-### Melanie
 ### Lubov Romashouck
 ### Miray Shahin
-=======
 ### Melanie Gin
->>>>>>> upstream/master
