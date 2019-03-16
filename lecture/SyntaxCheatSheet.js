@@ -13,6 +13,7 @@ if(x===3){ // Inside the parenthesis is where we give the argument
 }else{ //If it is not equal then do this
 	console.log(false);
 }
+//This will log true due to x being equal three
 
 for(var i=0; i<myList.length; i++){ //How to do a for loop (every time it loops i increses by one)
 	
