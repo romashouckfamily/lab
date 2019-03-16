@@ -10,5 +10,8 @@
 // Add your accepted ideas here 
 
 ## Signed,
-### Melanie
+
+
 ### Anton Issa Alsleibi 
+
+### Melanie Gin
