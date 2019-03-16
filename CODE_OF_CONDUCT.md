@@ -10,8 +10,7 @@
 // Add your accepted ideas here 
 
 ## Signed,
-
-
 ### Anton Issa Alsleibi 
-
+### Lubov Romashouck
+### Miray Shahin
 ### Melanie Gin
