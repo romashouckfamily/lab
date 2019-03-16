@@ -10,4 +10,4 @@
 // Add your accepted ideas here 
 
 ## Signed,
-### Melanie
+### Melanie Gin
