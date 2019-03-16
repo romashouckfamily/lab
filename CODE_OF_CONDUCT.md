@@ -10,7 +10,11 @@
 // Add your accepted ideas here 
 
 ## Signed,
-### Melanie
-#### nadeen
-##### dania
+### nadeen
+### dania
+### Fawzi Anastas
+### Anton Issa Alsleibi 
+### Lubov Romashouck
+### Miray Shahin
 ### Melanie Gin
+
