@@ -1,3 +1,6 @@
+## 0. Login to Slack and fill out the Week 3 check-in form 
+https://goo.gl/forms/Awo0t6xXqkxApHrG2
+
 ## 1. [30 minutes] Introduction to Git and collaborative workflow lecture
 
 ## 2. [1 hour] Collaboration on Code of Conduct
@@ -14,7 +17,7 @@
 4. Then, push your changes to your remote origin: `git push origin master`
 5. Finally, submit a Pull Request to my repository. Congratulations, you've submitted your first PR!
 
-## BREAK FOR MOVEMENT (5 minutes)
+## BREAK FOR SNACK (10 minutes)
 
 ## 3. [20 minutes] Javascript review in lecture form
 We will cover:
@@ -25,6 +28,8 @@ We will cover:
 - Loops: for and while
 - global vs. local scope
 - *We will add your open questions to the list of topics*
+
+## BREAK FOR MOVEMENT AND SURPRISE (5 minutes)
 
 ## 4. [1 hour] Day 3 practice worksheet
 - We will start a list on the board for help requests after 10 minutes.
