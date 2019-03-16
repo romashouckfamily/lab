@@ -8,6 +8,7 @@
 5. I will show up on time, and if I need to arrive late, leave early, or miss class, I will let Melanie know in advance.
 
 // Add your accepted ideas here 
-
+ 
 ## Signed,
 ### Melanie
+### Natalie 
