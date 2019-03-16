@@ -15,7 +15,7 @@ We develop intuition for problem-solving through PRACTICE!
 	* What is the data type of each of the `inputs` and `outputs`?
 	* What are some examples that I could use for testing after I write my function?
 
-1. Talk yourself through how the function should work, writing pseudo-code along the way. 
+2. Talk yourself through how the function should work, writing pseudo-code along the way. 
 	* See example for selecting items of color red. 
 	```
 	function selectItemsOfColorRed() {
@@ -30,7 +30,7 @@ We develop intuition for problem-solving through PRACTICE!
 		(2) Return all numbers greater than 10 from input array. 
 		(3) Return all keys in object for all numerical values. {"hello": 1, "goodbye": 2, "wait": "okay"}
 
-2. Start to write the function, using your pseudo-code as an outline. Console log frequently to check that your code is acting as expected. Write clean code to prevent simple bugs!
+3. Start to write the function, using your pseudo-code as an outline. Console log frequently to check that your code is acting as expected. Write clean code to prevent simple bugs!
 	* Pair parentheses, curly braces, and brackets properly. 
 	* Use good indentation so that you can read your code easily. You want to indent if creating a function body, if writing an `if` statement body, etc. You will develop intuition around this as you practice.
 
