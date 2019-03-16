@@ -24,9 +24,18 @@
 // output: false
 
 // Returns true if number is even and false if number is odd.
-function isEven(num) {
 
+
+function isEven(n) {
+  n = Number(2);
+  return n === 0 || !!(n && !(n%2));
 }
+
+function isOdd(n) {
+  return isEven(Number(n) + 1);
+}
+
+isEven('2');
 
 //////////////////////////////////
 // input: 8
@@ -128,6 +137,5 @@ function indexOf(list, value) {
 // output: ['b', 'c']
 
 //Returns the last element of an array. Passing n will return the last n elements of the array.
-function last(list, count) {
+// function last(list, count) {
 
-}
