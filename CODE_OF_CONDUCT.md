@@ -10,6 +10,8 @@
 // Add your accepted ideas here 
 
 ## Signed,
+### nadeen
+### dania
 ### Fawzi Anastas
 ### Anton Issa Alsleibi 
 ### Lubov Romashouck
