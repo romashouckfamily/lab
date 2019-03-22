@@ -51,38 +51,43 @@
 	var red = {
 		position: 0,
 		node: document.getElementById("a1"),
-		speed: 1
+		speed: 1,
+		color: "red"
 	};
 	var green = {
 		position: -20, 
 		node: document.getElementById("a2"),
-		speed: 2
+		speed: 2,
+		color: "green"
 	};
 	var blue = {
 		position: -100, 
 		node: document.getElementById("a3"),
-		speed: 1.5
+		speed: 1.5,
+		color: "blue"
 	};
 	var orange = {
 		position: -40,
 		node: document.getElementById("a4"),
-		speed: .8
+		speed: .8,
+		color: "orange"
 	}
 
 	function move() {
 
-		var intervalId = setInterval(function(){
-			moveItem(red, intervalId);
+		var redIntervalId = setInterval(function(){
+			moveItem(red, redIntervalId);
 		}, 5);
-		var intervalId = setInterval(function(){
-			moveItem(green, intervalId);
+		var greenIntervalId = setInterval(function(){
+			moveItem(green, greenIntervalId);
 		}, 5);
-		var intervalId = setInterval(function(){
-			moveItem(blue, intervalId);
+		var blueIntervalId = setInterval(function(){
+			moveItem(blue, blueIntervalId);
 		}, 5);
-		var intervalId = setInterval(function(){
-			moveItem(orange, intervalId);
+		var orangeIntervalId = setInterval(function(){
+			moveItem(orange, orangeIntervalId);
 		}, 5);
+
 	}
 	function moveItem(item, intervalId) {
 		if (item.position < 400) {
