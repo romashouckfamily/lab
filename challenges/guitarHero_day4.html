@@ -16,17 +16,14 @@
 		background-color: red;
 	}
 	#a2 {
-		top: -20px;
 		left: 50px;
 		background-color: green;
 	}
 	#a3 {
-		top: -100px;
 		left: 100px;
 		background-color: blue;
 	}
 	#a4 {
-		top: -40px;
 		left: 150px;
 		background-color: orange;
 	}
@@ -55,38 +52,51 @@
 		color: "red"
 	};
 	var green = {
-		position: -20, 
+		position: -0, 
 		node: document.getElementById("a2"),
 		speed: 2,
 		color: "green"
 	};
 	var blue = {
-		position: -100, 
+		position: 0, 
 		node: document.getElementById("a3"),
 		speed: 1.5,
 		color: "blue"
 	};
 	var orange = {
-		position: -40,
+		position: 0,
 		node: document.getElementById("a4"),
 		speed: .8,
 		color: "orange"
 	}
 
-	function move() {
+	var notes = [red, green, blue, orange];
+	
+	var intervalIds = {
+		red: undefined,
+		green: undefined,
+		blue: undefined,
+		orange: undefined
+	};
 
-		var redIntervalId = setInterval(function(){
-			moveItem(red, redIntervalId);
-		}, 5);
-		var greenIntervalId = setInterval(function(){
-			moveItem(green, greenIntervalId);
-		}, 5);
-		var blueIntervalId = setInterval(function(){
-			moveItem(blue, blueIntervalId);
-		}, 5);
-		var orangeIntervalId = setInterval(function(){
-			moveItem(orange, orangeIntervalId);
-		}, 5);
+	function move() {
+		// using a for loop requires:
+			// interval IDs must be identified and stored separately to avoid conflicts 
+		for (var i = 0; i < notes.length; i++) {
+			intervalIds[notes[i].color] = setInterval(moveItem, 5, notes[i], intervalIds[notes[i].color]);
+		}
+		// var redIntervalId = setInterval(function(){
+		// 	moveItem(red, redIntervalId);
+		// }, 5);
+		// var greenIntervalId = setInterval(function(){
+		// 	moveItem(green, greenIntervalId);
+		// }, 5);
+		// var blueIntervalId = setInterval(function(){
+		// 	moveItem(blue, blueIntervalId);
+		// }, 5);
+		// var orangeIntervalId = setInterval(function(){
+		// 	moveItem(orange, orangeIntervalId);
+		// }, 5);
 
 	}
 	function moveItem(item, intervalId) {
