@@ -25,6 +25,11 @@
 		left: 100px;
 		background-color: blue;
 	}
+	#a4 {
+		top: -40px;
+		left: 150px;
+		background-color: orange;
+	}
 	</style>
 
 	<head>
@@ -39,31 +44,49 @@
 	  <div class="animate" id="a1"></div>
 	  <div class="animate" id="a2"></div>
 	  <div class="animate" id="a3"></div>
+	  <div class="animate" id="a4"></div>
 	</div>
 
 	<script>
 	var red = {
-		position: "0", 
-		node: document.getElementById("a1")
+		position: 0,
+		node: document.getElementById("a1"),
+		speed: 1
 	};
 	var green = {
-		position: "-20", 
-		node: document.getElementById("a2")
+		position: -20, 
+		node: document.getElementById("a2"),
+		speed: 2
 	};
 	var blue = {
-		position: "-100", 
-		node: document.getElementById("a3")
+		position: -100, 
+		node: document.getElementById("a3"),
+		speed: 1.5
 	};
+	var orange = {
+		position: -40,
+		node: document.getElementById("a4"),
+		speed: .8
+	}
+
 	function move() {
+
 		var intervalId = setInterval(function(){
 			moveItem(red, intervalId);
+		}, 5);
+		var intervalId = setInterval(function(){
 			moveItem(green, intervalId);
+		}, 5);
+		var intervalId = setInterval(function(){
 			moveItem(blue, intervalId);
+		}, 5);
+		var intervalId = setInterval(function(){
+			moveItem(orange, intervalId);
 		}, 5);
 	}
 	function moveItem(item, intervalId) {
 		if (item.position < 400) {
-	    	item.position++; 
+	    	item.position = item.position + item.speed; 
 	      	item.node.style.top = item.position + "px"; 
 	    } else {
 	     	clearInterval(intervalId);
