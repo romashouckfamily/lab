@@ -37,33 +37,37 @@
 
 	<div id="container">
 	  <div class="animate" id="a1"></div>
-<!-- 	  <div class="animate" id="a2"></div>
-	  <div class="animate" id="a3"></div> -->
+	  <div class="animate" id="a2"></div>
+	  <div class="animate" id="a3"></div>
 	</div>
 
 	<script>
+	var red = {
+		position: "0", 
+		node: document.getElementById("a1")
+	};
+	var green = {
+		position: "-20", 
+		node: document.getElementById("a2")
+	};
+	var blue = {
+		position: "-100", 
+		node: document.getElementById("a3")
+	};
 	function move() {
-	  	var red = document.getElementById("a1");   
-	  	// var green = document.getElementById("a2");   
-	  	// var blue = document.getElementById("a3");   
-	  	var redPos = 0;
-  		// var greenPos = -20;
-  		// var bluePos = -100;
-		var intervalId = setInterval(frame, 5);
-	  
-		function frame() {
-			//if (redPos < 400) {
-			if (redPos < 400 || greenPos < 400 || bluePos < 400) {
-		      	redPos++; 
-		      	 greenPos++; 
-		      	 bluePos = bluePos + 2;
-		      	 red.style.top = redPos + "px"; 
-		      	 green.style.top = greenPos + "px"; 
-		      	 blue.style.top = bluePos + "px"; 
-		    } else {
-		     	clearInterval(intervalId);
-		    }
-		}
+		var intervalId = setInterval(function(){
+			moveItem(red, intervalId);
+			moveItem(green, intervalId);
+			moveItem(blue, intervalId);
+		}, 5);
+	}
+	function moveItem(item, intervalId) {
+		if (item.position < 400) {
+	    	item.position++; 
+	      	item.node.style.top = item.position + "px"; 
+	    } else {
+	     	clearInterval(intervalId);
+	    }
 	}
 	</script>
 	</body>
