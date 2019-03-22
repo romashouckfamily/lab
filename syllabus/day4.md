@@ -40,10 +40,10 @@
 - Get "Start Music" button working properly. 
 - When a user clicks this button, we want to start moving the individual notes at the speed the user requested.
 
-## 4. [30 minutes] In-class pair assignment Part 2
+## 6. [30 minutes] In-class pair assignment Part 2
 - Move shape across page to the right until position is at `300px`
 
-## 6. [15-20 minutes] Question and Answer 
+## 7. [15-20 minutes] Question and Answer 
 
 ### Homework: 
 - Front End Libraries Certification: jQuery > Introduction to jQuery (all of the challenges)
