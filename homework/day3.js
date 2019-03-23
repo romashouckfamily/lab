@@ -5,17 +5,32 @@
 */
 
 // 0. Print "Hello, world" to the console.
+console.log("Hello World"); 
 
+//Write an if statement to check if a value is greater than or equal to 10.
+var myName = "Sad";
+if (myName>=10){
+	console.log("It is greater than 10 or equal")
+} else if (myName<10){
+	console.log("It is not greater than or equal to 10")
+} else{
+	console.log("You didnt put the right thing")
+}
 
-// 1. Write an if statement to check if a value is greater than or equal to 10.
 
 
 // 2. Write an if statement to check if a string begins with Z
+let myStr = "Zebra";
+if(myStr[0] = "Z"){
+	console.log("true")
+}else{
+	console.log('False')
+	} 
 
 
 // 3. Print the third item in this array using bracket notation.
 var list = ["a", "q", "f", "g", "p"];
-
+console.log(list[2])
 
 // 4. Objects
 var person = {
@@ -25,26 +40,35 @@ var person = {
 	grade: 12
 }
 	// a. Print the value for key "name" in the above object using dot notation.
-
+console.log(person.name)
 
 	// b. Print the value for key "school" in the above object using bracket notation.
-
+console.log(person.school)
 
 // 5. Add a value to this array using the push function.
 var fruits = ["pomegranate", "peach", "pear", "pomelo", "rice"];
-
-
+fruits.push("watermelon")
+console.log(fruits)
 // 6. Remove the value "rice" from the fruits array. Try the splice function. 
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
-
+fruits.splice("4");
+console.log(fruits);
 
 // 7. Add a key-value to the person object above with key = "hasComputer" and value = true.
-
-
+person.hasComputer = true
+console.log(person)
 // 8. Write a for loop that prints the numbers 1-10 to the console.
+for(var i=1; i<=10; i++){ //How to do a for loop (every time it loops i increses by one)
+	
+	console.log(i); //How to access elements in a list
+}
 
-
-// 9. Write a while loop that prints the numbers 1-10 to the console.
+//9. Write a while loop that prints the numbers 1-10 to the console.
+var i =1;
+while (i<= 9){
+	i++;
+	console.log(i);
+}
 
  
 // 10. Take an array of numbers and makes a new list of only the first and last elements of the given list.
@@ -52,14 +76,19 @@ var fruits = ["pomegranate", "peach", "pear", "pomelo", "rice"];
 
 // input: [5, 10, 15, 20, 25]
 function firstAndLast(list) {
-
+var num1 = "5";
+var num2 = "10";
+var num3 = "15";
+var num3 = "20";
+var num3 = "25";
 }
+console.log(list)
 
 
 // 11. Take an array and return all elements less than 5. 
 // Write this code inside a function.
 // input: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-function lessThanFive(list) {
+{
 
 }
 
