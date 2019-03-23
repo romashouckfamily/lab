@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<style>
+	#helloMessage {
+		color: pink;
+	}
+	#musicContainer {
+	  width: 100%;
+	  height: 400px;
+	  position: relative;
+	  background: lightblue;
+	}
+	.animate {
+	  width: 50px;
+	  height: 50px;
+	  position: absolute;
+	</style>
+
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Hi Melanie</title>
+	</head>
+	<body>
+		<h1 id="helloMessage">Hello there friend</h1>
+		<h2>Welcome to Guitar Hero!</h1>
+
+		<p><button onclick="addNote()">Add note</button></p> 
+
+		<div id="addNotesContainer">
+			<label for="color">Note color:</label>
+			<input type="text" id="color" name="color" required>
+			<label for="speed">Note speed:</label>
+			<input type="text" id="speed" name="speed" required>
+		</div>
+
+<!-- 		<p><button onclick="moveNotes()">Start music</button></p> 
+ --><!-- 		<p><button onclick="remove()">Start over</button></p> 
+ -->
+		<div id="musicContainer"></div>
+		<table id="notesList"></table>
+		<div id="notesList"></div> 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+		var numNotes = 0;
+		var notes = [];
+		var intervalIds = {};
+
+		function addNote() {
+			// get user inputs for speed and color
+			var color = $('input#color').val();
+			var speed =  $('input#speed').val();
+
+			if (color && speed) {
+				// count number of notes and create a unique ID
+				numNotes++;
+				var id = 'a' + numNotes;
+
+				// append note to music container with proper styling	
+				$('<div></div>').appendTo('#musicContainer')
+					.addClass('animate')
+					.attr('id', id)
+					.css({
+						"background-color": color,
+						"left" : (numNotes - 1) * 50
+					});
+
+				// handle data
+				addNoteObjToList(id, color, speed);
+				$('input#color').val("");
+				$('input#speed').val("");
+			}
+		}
+
+		function addNoteObjToList(id, color, speed) {
+			// three goals: 
+			// 1) add note to data storage
+			// 2) create a unique interval id
+			// 3) add to displayed list
+			notes.push({
+				position: 0,
+				node: $("#" + id),
+				speed: parseFloat(speed),
+				color: color
+			})
+
+			intervalIds[color] = undefined;
+
+			$('<tr><td>'+ color +'</td><td>'+ speed +'</td></tr>').appendTo('table#notesList')
+		}
+
+		// function moveNotes() {
+		// 	// using a for loop requires:
+		// 		// interval IDs must be identified and stored separately to avoid conflicts 
+		// 	for (var i = 0; i < notes.length; i++) {
+		// 		intervalIds[notes[i].color] = setInterval(moveItem, 5, notes[i], intervalIds[notes[i].color]);
+		// 	}
+
+		// }
+
+		// function moveItem(item, intervalId) {
+		// 	if (item.position < 400) {
+		//     	item.position = item.position + item.speed; 
+		//       	item.node.css("top", item.position + "px"); 
+		//     } else {
+		//      	clearInterval(intervalId);
+		//     }
+		// }
+
+		// function remove() {
+		// 	$('#musicContainer').empty();
+		// 	$('table#notesList').empty();
+		// 	numNotes = 0;
+		// 	notes = [];
+		// 	intervalIds = {};
+		// }
+	</script>
+	</body>
+</html>
