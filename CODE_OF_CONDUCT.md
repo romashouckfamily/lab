@@ -8,8 +8,17 @@
 5. I will show up on time, and if I need to arrive late, leave early, or miss class, I will let Melanie know in advance.
 
 // Add your accepted ideas here 
-
+ 
 ## Signed,
-### Melanie
-#### shrouq
-
+### shrouq
+### Natalie 
+### Salar
+### amjad
+### Ibrahim
+### nadeen
+### dania
+### Fawzi Anastas
+### Anton Issa Alsleibi 
+### Lubov Romashouck
+### Miray Shahin
+### Melanie Gin
