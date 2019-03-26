@@ -38,7 +38,7 @@
 ## 7. [15-20 minutes] Question and Answer 
 
 ### Homework: 
-- Basic HTML and HTML5: all of the challenges
+- freecodecamp Basic HTML and HTML5: all of the challenges (https://learn.freecodecamp.org/responsive-web-design/basic-html-and-html5)
 - Review HTML by reading this website: http://eloquentjavascript.net/14_dom.html#h_XJzHjmX32m
-- Front End Libraries Certification > jQuery > Introduction to jQuery: challenges up until Target Elements by id using jQuery
+- freecodecamp Front End Libraries Certification > jQuery > Introduction to jQuery: challenges up until Target Elements by id using jQuery (https://learn.freecodecamp.org/front-end-libraries/jquery)
 - Finish in-class pair assignment
