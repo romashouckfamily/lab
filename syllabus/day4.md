@@ -35,16 +35,10 @@
 
 ## [5 minutes] Break
 
-## 5. [30 minutes] Coding demonstration and discussion Part 2
-###Task 3:
-- Get "Start Music" button working properly. 
-- When a user clicks this button, we want to start moving the individual notes at the speed the user requested.
-
-## 6. [30 minutes] In-class pair assignment Part 2
-- Move shape across page to the right until position is at `300px`
-
 ## 7. [15-20 minutes] Question and Answer 
 
 ### Homework: 
-- Front End Libraries Certification: jQuery > Introduction to jQuery (all of the challenges)
-- Finish in-class pair assignments
+- Basic HTML and HTML5: all of the challenges
+- Review HTML by reading this website: http://eloquentjavascript.net/14_dom.html#h_XJzHjmX32m
+- Front End Libraries Certification > jQuery > Introduction to jQuery: challenges up until Target Elements by id using jQuery
+- Finish in-class pair assignment
