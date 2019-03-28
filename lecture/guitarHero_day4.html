@@ -35,12 +35,13 @@
 			<input type="text" id="speed" name="speed" required>
 		</div>
 
-<!-- 		<p><button onclick="moveNotes()">Start music</button></p> 
- --><!-- 		<p><button onclick="remove()">Start over</button></p> 
- -->
+		<p><button onclick="moveNotes()">Start music</button></p> 
+
+ 		<p><button onclick="remove()">Start over</button></p> 
+
 		<div id="musicContainer"></div>
 		<table id="notesList"></table>
-		<div id="notesList"></div> 
+		<div id="feedback"></div> 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -48,6 +49,24 @@
 		var numNotes = 0;
 		var notes = [];
 		var intervalIds = {};
+
+	    $('#musicContainer').click(function (event) { 
+	        console.log(event.pageX + ' , ' + event.pageY);
+	        checkNoteCollision(event.pageX, event.pageY);
+	    });
+
+	    function checkNoteCollision(cursorX, cursorY) {
+	    	for (var i = 0; i < notes.length; i++) {
+	    		console.log(notes[i].left, notes[i].top);
+	    		if (Math.abs(notes[i].left - cursorX) < 10 && Math.abs(notes[i].top - cursorY) < 10) {
+	    			console.log("good hit");
+	    			$('#feedback').text("Nice work!");
+	    			return;
+	    		}
+	    	}
+	    	$('#feedback').text("Better luck next time!");
+
+	    }
 
 		function addNote() {
 			// get user inputs for speed and color
@@ -58,30 +77,31 @@
 				// count number of notes and create a unique ID
 				numNotes++;
 				var id = 'a' + numNotes;
-
+				var left = (numNotes - 1) * 50;
 				// append note to music container with proper styling	
 				$('<div></div>').appendTo('#musicContainer')
 					.addClass('animate')
 					.attr('id', id)
 					.css({
 						"background-color": color,
-						"left" : (numNotes - 1) * 50
+						"left" : left
 					});
 
 				// handle data
-				addNoteObjToList(id, color, speed);
+				addNoteObjToList(id, color, speed, left);
 				$('input#color').val("");
 				$('input#speed').val("");
 			}
 		}
 
-		function addNoteObjToList(id, color, speed) {
+		function addNoteObjToList(id, color, speed, left) {
 			// three goals: 
 			// 1) add note to data storage
 			// 2) create a unique interval id
 			// 3) add to displayed list
 			notes.push({
-				position: 0,
+				left: left,
+				top: 0,
 				node: $("#" + id),
 				speed: parseFloat(speed),
 				color: color
@@ -102,7 +122,7 @@
 				    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
 				},
 				success: function (data) { 
-					$('body').css( 'cursor', `url(${data.sprites.front_default}), auto` );
+					// $('body').css( 'cursor', `url(${data.sprites.front_default}), auto` );
 					$("#helloMessage").text(`Hello there ${data.species.name}`);
 				},
 				error: function (data) {
@@ -111,31 +131,31 @@
 			});
 		}
 
-		// function moveNotes() {
-		// 	// using a for loop requires:
-		// 		// interval IDs must be identified and stored separately to avoid conflicts 
-		// 	for (var i = 0; i < notes.length; i++) {
-		// 		intervalIds[notes[i].color] = setInterval(moveItem, 5, notes[i], intervalIds[notes[i].color]);
-		// 	}
+		function moveNotes() {
+			// using a for loop requires:
+				// interval IDs must be identified and stored separately to avoid conflicts 
+			for (var i = 0; i < notes.length; i++) {
+				intervalIds[notes[i].color] = setInterval(moveItem, 5, notes[i], intervalIds[notes[i].color]);
+			}
 
-		// }
+		}
 
-		// function moveItem(item, intervalId) {
-		// 	if (item.position < 400) {
-		//     	item.position = item.position + item.speed; 
-		//       	item.node.css("top", item.position + "px"); 
-		//     } else {
-		//      	clearInterval(intervalId);
-		//     }
-		// }
+		function moveItem(item, intervalId) {
+			if (item.top < 400) {
+		    	item.top = item.top + item.speed; 
+		      	item.node.css("top", item.top + "px"); 
+		    } else {
+		     	clearInterval(intervalId);
+		    }
+		}
 
-		// function remove() {
-		// 	$('#musicContainer').empty();
-		// 	$('table#notesList').empty();
-		// 	numNotes = 0;
-		// 	notes = [];
-		// 	intervalIds = {};
-		// }
+		function remove() {
+			$('#musicContainer').empty();
+			$('table#notesList').empty();
+			numNotes = 0;
+			notes = [];
+			intervalIds = {};
+		}
 	</script>
 	</body>
 </html>
