@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<style>
+	#helloMessage {
+		color: pink;
+	}
+	#musicContainer {
+	  width: 200px;
+	  height: 400px;
+	  position: relative;
+	  background: lightblue;
+	}
+	.animate {
+	  width: 50px;
+	  height: 50px;
+	  position: absolute;
+	</style>
+
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Hi Melanie</title>
+	</head>
+	<body>
+		<h1 id="helloMessage">Hello there</h1>
+		<h2>Welcome to Guitar Hero! Please select your character. </h1>
+
+		<p><button onclick="getCharacter()">Get character</button></p> 
+
+		<p><button onclick="addNote()">Add note</button></p> 
+
+		<div id="addNotesContainer">
+			<label for="color">Note color:</label>
+			<input type="text" id="color" name="color" required>
+			<label for="speed">Note speed:</label>
+			<input type="text" id="speed" name="speed" required>
+		</div>
+
+		<p><button onclick="moveNotes()">Start music</button></p> 
+
+ 		<p><button onclick="remove()">Start over</button></p> 
+
+		<div id="musicContainer"></div>
+		<table id="notesList"></table>
+		<div id="feedback"></div> 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+		var numNotes = 0;
+		var notes = [];
+		var intervalIds = {};
+
+	    $('#musicContainer').click(function (event) { 
+	        console.log(event.pageX + ' , ' + event.pageY);
+	        checkNoteCollision(event.pageX, event.pageY);
+	    });
+
+	    function checkNoteCollision(cursorX, cursorY) {
+	    	for (var i = 0; i < notes.length; i++) {
+	    		console.log(notes[i].left, notes[i].top);
+	    		if (Math.abs(notes[i].left - cursorX) < 10 && Math.abs(notes[i].top - cursorY) < 10) {
+	    			console.log("good hit");
+	    			$('#feedback').text("Nice work!");
+	    			return;
+	    		}
+	    	}
+	    	$('#feedback').text("Better luck next time!");
+
+	    }
+
+		function addNote() {
+			// get user inputs for speed and color
+			var color = $('input#color').val();
+			var speed =  $('input#speed').val();
+
+			if (color && speed) {
+				// count number of notes and create a unique ID
+				numNotes++;
+				var id = 'a' + numNotes;
+				var left = (numNotes - 1) * 50;
+				// append note to music container with proper styling	
+				$('<div></div>').appendTo('#musicContainer')
+					.addClass('animate')
+					.attr('id', id)
+					.css({
+						"background-color": color,
+						"left" : left
+					});
+
+				// handle data
+				addNoteObjToList(id, color, speed, left);
+				$('input#color').val("");
+				$('input#speed').val("");
+			}
+		}
+
+		function addNoteObjToList(id, color, speed, left) {
+			// three goals: 
+			// 1) add note to data storage
+			// 2) create a unique interval id
+			// 3) add to displayed list
+			notes.push({
+				left: left,
+				top: 0,
+				node: $("#" + id),
+				speed: parseFloat(speed),
+				color: color
+			})
+
+			intervalIds[color] = undefined;
+
+			$('<tr><td>'+ color +'</td><td>'+ speed +'</td></tr>').appendTo('table#notesList')
+		}
+
+		function getCharacter() {
+			var characterId = Math.ceil(Math.random() * 50);
+			var url = `https://pokeapi.co/api/v2/pokemon/${characterId}`;
+			$.ajax({
+				url: url,
+				type: 'GET',
+				beforeSend: function (xhr) {
+				    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+				},
+				success: function (data) { 
+					// $('body').css( 'cursor', `url(${data.sprites.front_default}), auto` );
+					$("#helloMessage").text(`Hello there ${data.species.name}`);
+				},
+				error: function (data) {
+					console.log(data);
+				},
+			});
+		}
+
+		function moveNotes() {
+			// using a for loop requires:
+				// interval IDs must be identified and stored separately to avoid conflicts 
+			for (var i = 0; i < notes.length; i++) {
+				intervalIds[notes[i].color] = setInterval(moveItem, 5, notes[i], intervalIds[notes[i].color]);
+			}
+
+		}
+
+		function moveItem(item, intervalId) {
+			if (item.top < 400) {
+		    	item.top = item.top + item.speed; 
+		      	item.node.css("top", item.top + "px"); 
+		    } else {
+		     	clearInterval(intervalId);
+		    }
+		}
+
+		function remove() {
+			$('#musicContainer').empty();
+			$('table#notesList').empty();
+			numNotes = 0;
+			notes = [];
+			intervalIds = {};
+		}
+	</script>
+	</body>
+</html>

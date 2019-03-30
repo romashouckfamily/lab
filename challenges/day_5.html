@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Day 5 Challenge!</title>
+	
+</head>
+<body>
+<h1> Please put your name here: </h1>
+<input type="text" name="nameInput" id="nameInput"> 
+<br>
+<input type="submit" name="submit" value="Submit" onclick="submit()">
+
+
+
+
+
+<!-- 
+
+This is a function that alerts the user with a hello message,
+Your job is to:
+1. Make the function only work if there is something in the input (Hint: if statements)
+2. Clear the textbox after user presses the submit button.
+
+!-->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+function submit(){
+	let value = $("#nameInput").val();
+	alert("Hello, " + value);
+}
+
+	
+
+		
+		
+		
+
+	
+	
+</script>
+	
+
+</body>
+</html>
