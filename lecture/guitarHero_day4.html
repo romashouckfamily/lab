@@ -23,8 +23,8 @@
 	<body>
 		<h1 id="helloMessage">Hello there</h1>
 		<h2>Welcome to Guitar Hero! Please select your character. </h1>
-
-		<p><button onclick="getCharacter()">Get character</button></p> 
+		
+		<p><button onclick="getCharacter()">Get character</button></p>
 
 		<p><button onclick="addNote()">Add note</button></p> 
 
@@ -113,7 +113,11 @@
 		}
 
 		function getCharacter() {
-			var characterId = Math.ceil(Math.random() * 50);
+
+			console.log("called function getCharacter");
+
+			var characterId = Math.ceil(Math.random() * 1000);
+
 			var url = `https://pokeapi.co/api/v2/pokemon/${characterId}`;
 			$.ajax({
 				url: url,
@@ -121,9 +125,17 @@
 				beforeSend: function (xhr) {
 				    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
 				},
-				success: function (data) { 
-					// $('body').css( 'cursor', `url(${data.sprites.front_default}), auto` );
-					$("#helloMessage").text(`Hello there ${data.species.name}`);
+				success: function (response) { 
+					// dot notation
+					var picture = response["sprites"]["front_shiny"];
+
+					// bracket notation
+					var name =response["name"];
+					$('#helloMessage').text(`Hello there ${name}`);
+					//$('#helloMessage').text("Hello there " + name);
+
+					$('body').css('cursor', `url(${picture}), auto`);
+
 				},
 				error: function (data) {
 					console.log(data);

@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+	#nameInput {
+		color: red;
+	}
+</style>
 <head>
 	<meta charset="UTF-8">
 	<title>Day 5 Challenge!</title>
@@ -7,9 +12,9 @@
 </head>
 <body>
 <h1> Please put your name here: </h1>
-<input type="text" name="nameInput" id="nameInput"> 
+<input type="text" name="nameInput" id="nameInput" onchange="change()"> 
 <br>
-<input type="submit" name="submit" value="Submit" onclick="submit()">
+<input type="submit" name="submit" id="submitInput" value="Submit" onclick="submit()">
 
 
 
@@ -28,8 +33,38 @@ Your job is to:
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
 
+// When click submit button log hello + input
+// Only alert when there is a value
+// Clear text box
+
+function change() {
+	console.log("changed! ");
+}
+
 function submit(){
 	let value = $("#nameInput").val();
+<<<<<<< HEAD
+=======
+	// If statement to check if there is a value
+	if(value){
+
+		alert(`Hello, ${value}`);
+		$("#nameInput").val("")
+		// alert("Hello, " + value);
+
+	}else{
+		alert("You did not write anything at all");
+	}
+
+	// Else statement 
+		//to alert error message
+	// Clear the text box
+
+
+	//alert("Hello, " + value);
+}
+
+>>>>>>> upstream/master
 	
 
 	if (value){

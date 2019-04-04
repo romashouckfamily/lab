@@ -12,18 +12,26 @@
 ##3. [60 minutes] Introduce new concept: Ajax requests to external endpoints using the guitar assignment
 - What is an AJAX request? It's a way of loading data from a server without requiring a page reload. 
 - jQuery provides the $.ajax method — and several convenience methods — to make it easier to work with XHRs across browsers.
+- What are the types of AJAX requests? 
+	* GET: get information from the external server
+	* POST: create new information and send to the server
+	* PUT: modifies existing information on the server
+	* DELETE: deletes existing information off of the server
+- Two steps in sending a request:
+	* 1. Get information from user using jQuery to find information in HTML
+	* 2. Send the request
 - Read through the jQuery fundamentals website together: http://jqfundamentals.com/chapter/ajax-deferreds
 - Explore jQuery diagram: https://www.w3schools.com/xml/ajax_intro.asp
-- What are the types of AJAX requests? GET, POST, PUT, DELETE
 - Try it out with the Pokemon API. Let's get an image for our cursor with: https://pokeapi.co/
 - Briefly discuss CORS: https://www.html5rocks.com/en/tutorials/cors/
 
 ## [10 minutes] BREAK
 
 ## 4. [30 minutes] In-class pair assignment: try using jQuery yourself in your project using the pokemon API
-- Your request URL should be in this format: `https://pokeapi.co/api/v2/pokemon/1/`
-- Make sure to get different pokemon every time... don't just leave the ID as 1 forever
-- You can select the cursor with `$('body').css('cursor', 'url(PUT_URL_HERE), auto')`
+- Step 1: Send Request! Your request URL should be in this format: `https://pokeapi.co/api/v2/pokemon/1/`
+	* Make sure to get different pokemon every time... don't just leave the ID as 1 forever
+- Step 2: Handle response
+	* You can select the cursor with `$('body').css('cursor', 'url(PUT_URL_HERE), auto')`
 
 ## 5. [30 minutes] Introduce Coding demonstration and discussion Part 2
 ###Task 3:
@@ -36,5 +44,6 @@
 ## 7. [20 minutes] Question and Answer 
 
 ## Homework
+- freecodecamp Basic HTML and HTML5: if you didn't finish last week, do all of the challenges this week (https://learn.freecodecamp.org/responsive-web-design/basic-html-and-html5)
 - freecodecamp Front End Libraries Certification > jQuery > Introduction to jQuery: Finish this section! (https://learn.freecodecamp.org/front-end-libraries/jquery)
 - If you're finding HTML interesting (or difficult) and would like more practice, try this website: https://learn.shayhowe.com/. Do the HTML and CSS practice.
