@@ -17,10 +17,9 @@ if (myName>=10){
 	console.log("You didnt put the right thing")
 }
 
-<<<<<<< HEAD
-=======
+
 // 1. Write an if statement to check if a value is greater than or equal to 10.
->>>>>>> upstream/master
+
 
 
 // 2. Write an if statement to check if a string begins with Z
@@ -34,10 +33,7 @@ if(myStr[0] = "Z"){
 
 // 3. Print the third item in this array using bracket notation.
 var list = ["a", "q", "f", "g", "p"];
-<<<<<<< HEAD
 console.log(list[2])
-=======
->>>>>>> upstream/master
 
 // 4. Objects
 var person = {
@@ -47,17 +43,10 @@ var person = {
 	grade: 12
 }
 	// a. Print the value for key "name" in the above object using dot notation.
-<<<<<<< HEAD
 console.log(person.name)
 
 	// b. Print the value for key "school" in the above object using bracket notation.
 console.log(person.school)
-=======
-
- 
-
-	// b. Print the value for key "school" in the above object using bracket notation.
->>>>>>> upstream/master
 
 // 5. Add a value to this array using the push function.
 var fruits = ["pomegranate", "peach", "pear", "pomelo", "rice"];
@@ -65,18 +54,16 @@ fruits.push("watermelon")
 console.log(fruits)
 // 6. Remove the value "rice" from the fruits array. Try the splice function. 
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
-<<<<<<< HEAD
+
 fruits.splice("4");
 console.log(fruits);
 
-=======
 var fruits = ["pomegranate", "peach", "pear", "pomelo", "rice"];
 fruits.splice(4);
 console.log(fruits);
 //expected output:array['pomegranate','peach','pear','pomelo']
 
-//expected output:['pomegranate','peach','pear','pomelo']
->>>>>>> upstream/master
+
 // 7. Add a key-value to the person object above with key = "hasComputer" and value = true.
 person.hasComputer = true
 console.log(person)

@@ -30,15 +30,19 @@ Your job is to:
 
 function submit(){
 	let value = $("#nameInput").val();
-	alert("Hello, " + value);
-}
-
 	
 
-		
-		
-		
+	if (value){
+		alert("Hello, " + value);
 
+
+	} else{
+		alert("you did not write anything at all");
+
+
+	}
+	$("#nameInput").val("")
+}
 	
 	
 </script>
