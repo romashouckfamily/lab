@@ -1,3 +1,14 @@
+<!-- 
+INSTRUCTIONS
+1. Add <style> and <script> tags to the correct places in the HTML document
+2. Add the jQuery library as a dependency (where does `<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>` go?)	
+3. And an input field where the user can tell you their favorite book	
+4. Add a button that allows the user to submit their input
+5. Add a Javascript function in the <script> tag to send a request to the Google Books API using an AJAX request
+6. Upon submitting their favorite book, call the Javascript function you created in step 5 using jQuery
+7. Using jQuery, display an image of the book after the request finishes
+Sample request: https://www.googleapis.com/books/v1/volumes?q=harry+potter
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,43 +16,6 @@
 	<title>What's your favorite book?</title>
 </head>
 <body>
-<h1> What is your favorite book? </h1>
-
-
-
-<p><input type="text" id = "bookInput"></p>
-<p><button onclick="submit()">Submit</button></p>
-<img src="#" id="bookImage">
-
-
-
-
-
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
-function submit(){
-	let book = $("#bookInput").val();
-	console.log(book);
-	let url = `https://www.googleapis.com/books/v1/volumes?q=${book}`
-	$.ajax({
-	url: url,
-	type: 'GET',
-	beforeSend: function (xhr) {
-	    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-	},
-	success: function (response) { 
-		var source = response["Object"][0]["volumeInfo"]["imageLinks"]["thumbnail"];
-		$("#bookImage").attr('src', source);
-		
-
-	},
-	});
-}	
-
-</script>		
+	
 </body>
 </html>
