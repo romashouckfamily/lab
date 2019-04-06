@@ -7,6 +7,7 @@
 	* 3. Add this folder to your .gitignore file so that it is not pushed online every time you update it
 
 - How to fetch new code and resolve existing merge conflicts:
+	* `cd ~/projects/lab`
 	* `git fetch upstream master`
 	* `git merge upstream/master`
 
