@@ -1,0 +1,51 @@
+<!--
+This is what was done during the extra session. 
+Currently it requests the users favorite book and sends an AJAX request 
+with the search as the users favorite book. Your job is to:
+
+1. Set up empty paragraph tags after the image
+2. Pull the description from the ajax request, and set the paragraph tag text to the description
+	a. Hint: Use .text() 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>What's your favorite book?</title>
+</head>
+<body>
+<h1>What is your favorite book?</h1>
+
+<p><input type="text" id = "bookInput"></p>
+<p><button onclick="submit()">Submit</button></p>
+<div id="bookImage"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+function submit(){
+	let book = $("#bookInput").val();
+	let url = `https://www.googleapis.com/books/v1/volumes?q=${book}`;
+	$.ajax({
+		url: url,
+		type: 'GET',
+		beforeSend: function (xhr) {
+		    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+		},
+		success: function (response) {
+			// response is the data we receive back from the Google Books API
+			console.log(response);
+			// response.items[0] is the first book in the response
+			var image = response.items[0]["volumeInfo"]["imageLinks"]["thumbnail"];
+			$( `<img src=${image} alt="book image">` ).appendTo( "#bookImage" );		
+		},
+		error: function (error) {
+			console.log(error);
+		}
+	});
+}	
+
+</script>		
+</body>
+</html>
