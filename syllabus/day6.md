@@ -25,3 +25,24 @@ It is important to read all of the messages in the Terminal when you are using g
 
 ## [60 minutes] React Tutorial
 
+## Homework
+- React freecodecamp (https://learn.freecodecamp.org/) until `Create a React Component` 
+- Write a function that creates a Person object, using the code in`lecture/classes.js` as an example. Use both a function constructor and a class declaration. Give the person three properties: `name`, `age`, and `talent`. Give the person two methods `sayHello` and `walk`. 
+```
+var Person = function(name, age, talent) {
+	// your code here
+
+
+}
+
+class PersonClass {
+	constructor(name, age, talent) {
+		// your code here
+		
+
+  	}
+	// and here!
+
+
+}
+```
