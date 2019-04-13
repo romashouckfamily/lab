@@ -21,7 +21,7 @@ with the search as the users favorite book. Your job is to:
 <p><input type="text" id = "bookInput"></p>
 <p><button onclick="submit()">Submit</button></p>
 <div id="bookImage"></div>
-
+<p id ="description"></p>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
 function submit(){
@@ -34,6 +34,7 @@ function submit(){
 		    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
 		},
 		success: function (response) {
+			$("#description").text(response.items[0].volumeInfo.description);
 			// response is the data we receive back from the Google Books API
 			console.log(response);
 			// response.items[0] is the first book in the response
