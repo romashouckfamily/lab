@@ -26,7 +26,7 @@ class Board extends React.Component {
       <div>
         <div className="status">{status}</div>
         <div className="board-row">
-          {this.renderSquare(a)}
+          {this.renderSquare("a")}
           {this.renderSquare(1)}
           {this.renderSquare(2)}
         </div>
@@ -61,7 +61,7 @@ class Game extends React.Component {
   }
 }
 
-/
+
 ReactDOM.render(
   <Game />,
   document.getElementById('root')
